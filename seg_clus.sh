@@ -11,7 +11,7 @@ start_time=$(date +%s)
 
 rm *output  # remove older file with outout suffix to avoid appending
 
-cc seg_clus1.c -lm
+cc seg_clus.c -lm
 ./a.out $FILE $markovorder $confid1 $confid2 $confid3 segmentation_output clustering_output 
 
 finish_time=$(date +%s)
