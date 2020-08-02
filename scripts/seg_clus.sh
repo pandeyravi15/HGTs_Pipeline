@@ -9,7 +9,7 @@ start_time=$(date +%s)
 
 rm *output  # remove older file with outout suffix to avoid appending
 
-cc scripts/seg_clus1.c -lm
+cc scripts/seg_clus.c -lm
 ./a.out $FILE $markovorder $confid1 $confid2 $confid3 seg_clus_output.txt 
 
 finish_time=$(date +%s)
